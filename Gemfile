@@ -1,6 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+
+group :production do
+    gem 'pg'
+end
+
+group :development, :test do
+    gem 'sqlite3'
+end
+
 gem 'jquery-rails'
 gem  'devise'
 gem 'simple_form'
@@ -9,7 +18,9 @@ gem 'simple_form'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'forem', :git => "git://github.com/radar/forem.git"
 gem 'kaminari', '0.13.0'
-gem 'sqlite3'
+
+
+
 
 
 # Gems used only for assets and not required
