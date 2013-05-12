@@ -6,8 +6,10 @@ FSF::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Forem relies on it being the default of "forem"
   mount Forem::Engine, :at => '/forums'
+  match '/about' => 'static_pages#about'
 
   devise_for :installs
   devise_for :users
   root :to => 'static_pages#welcome'
+
 end
