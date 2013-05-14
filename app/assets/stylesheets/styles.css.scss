@@ -29,8 +29,12 @@ body{
     }
 }
 
+body 
+{background-image: url("fashionstudentforums.jpg"); 
+}
+
+
 .content {
-  background-image: url("fashionstudentforums.jpg"); 
   width:100%;
   height:800px;
 
@@ -101,14 +105,16 @@ margin:0px auto;
 
 .aboutmain
 {background-color: white;
+background-opacity:0.8;
 height:800px;
- width:800px;
- margin: 0px auto;
+ width:900px;
+ margin: 100px auto;
  }
 
 .logo
 {width:300px;
-margin: 0px auto;}
+margin: 0px auto;
+}
 
 .signin {
 float:right;
