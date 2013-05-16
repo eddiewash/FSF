@@ -14,7 +14,7 @@ def show
 
   @title = @user.name
   end
-
+  
 
 def create
   @user = User.new(params[:user])
