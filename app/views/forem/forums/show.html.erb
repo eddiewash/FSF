@@ -1,8 +1,17 @@
+<div class="forummain">
+
+<div class="profile">
+<%= render :partial => 'users/profile' %>
+</div>
+
+
+<div class="forumpage">
+
 <%= render :partial => 'forem/forums/head', :locals => { :forum => @forum } %>
 
 <%= forem_pages_widget(@topics) %>
 
-<table class='topics subdued' cellspacing='0'>
+<table class='topics subdued' cellspacing='20'>
   <thead>
     <tr>
       <th class="icon"></th>
@@ -14,10 +23,11 @@
   </thead>
   <tbody>
     <% if @topics.empty? %>
-      <tr><td colspan='5' align='center'><%= t('forem.topic.none') %></td></tr>
+      <tr><td colspan='20' align='center'><%= t('forem.topic.none') %></td></tr>
     <% end %>
     <%= render @topics %>
   </tbody>
 </table>
 
-<%= forem_pages_widget(@topics) %>
+<%= forem_pages_widget(@topics) 
+</div>

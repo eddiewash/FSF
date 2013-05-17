@@ -30,12 +30,31 @@ body{
 }
 
 body 
-{background-image: url("fashionstudentforums.jpg"); 
+{background-image: url("fashionstudentforums.jpg");
+}
+
+#profile {
+  background:white;
+  float:left;
+  height:100%;
+  width:150px;
+  margin-right: 100px;
+
 }
 
 
+.forummain
+{width:1200%;
+margin:40px;
+margin-left:0px;
+}
+
+.avatar {
+  width:100px;
+}
+
 .content {
-  width:100%;
+  width:1200%;
   height:800px;
 
 }

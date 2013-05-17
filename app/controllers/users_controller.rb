@@ -11,7 +11,8 @@ def show
   else
     @user = User.find(params[:id])
   end
-
+  @twitter="tweet"
+  @date=@user.name
   @title = @user.name
   end
   
