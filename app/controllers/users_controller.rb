@@ -3,18 +3,23 @@ class UsersController < ApplicationController
 def new
   @user = User.new
   @title = "Sign up"
+  @usename= User.name
 end
 
 def show
-  if params[:id].nil? && current_user
-    @user = current_user
-  else
+if params[:id].nil?
+  @user = "Newbie"
+    else
     @user = User.find(params[:id])
   end
-  @twitter="tweet"
-  @date=@user.name
-  @title = @user.name
-  end
+end
+ # if params[:id].nil? && current_user
+  #  @user = current_user
+   # session[:id] = current_user
+  #else
+   # @user = User.find(params[:id])
+  #end
+  #end
   
 
 def create

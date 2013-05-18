@@ -1,17 +1,17 @@
-<div class="forummain">
 
+<div class="content">
 <div class="profile">
 <%= render :partial => 'users/profile' %>
 </div>
 
 
-<div class="forumpage">
+
 
 <%= render :partial => 'forem/forums/head', :locals => { :forum => @forum } %>
 
 <%= forem_pages_widget(@topics) %>
 
-<table class='topics subdued' cellspacing='20'>
+<table class='topics subdued' cellspacing='50'>
   <thead>
     <tr>
       <th class="icon"></th>
@@ -29,5 +29,5 @@
   </tbody>
 </table>
 
-<%= forem_pages_widget(@topics) 
+<%= forem_pages_widget(@topics) %>
 </div>

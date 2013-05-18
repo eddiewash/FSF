@@ -33,6 +33,11 @@ body
 {background-image: url("fashionstudentforums.jpg");
 }
 
+.welcome
+{
+width:800px;
+}
+
 #profile {
   background:white;
   float:left;
@@ -42,33 +47,45 @@ body
 
 }
 
+#profilecontent {
+  margin:0px auto;
+  padding:10px;
+}
 
 .forummain
-{width:1200%;
-margin:40px;
-margin-left:0px;
+{width:1000px;
+margin-top:40px;
+margin-right:200px;
+float:left;
 }
 
 .avatar {
   width:100px;
+  margin:20px auto;
 }
 
 .content {
-  width:1200%;
+  width:1200px;
   height:800px;
+  margin:50px auto;
 
 }
-
-h1, h2, h3, h4, {
+.topics
+{float:right;
+width:300px;
+margin:20px 100px;}
+h1, h2, h3, h4, td {
     font-family: 'Oswald', sans-serif;
 
 }
 
-h3 {
+h3, {
 	color:#F08080;
 	font-weight: 500;
 }
 
+thread
+{width:400px}
 h4
 {
 color:#20BBB2;
@@ -117,22 +134,24 @@ width:400px;
 
 }
 .main 
-
 { width:900px;
+height:800px;
 margin:0px auto;
 }
 
 .aboutmain
 {background-color: white;
-background-opacity:0.8;
-height:800px;
+height:500px;
  width:900px;
- margin: 100px auto;
+ margin: 100px auto; 
+
  }
 
 .logo
 {width:300px;
-margin: 0px auto;
+hright:300px;
+padding: 20px;
+margin:0px auto;
 }
 
 .signin {
@@ -145,5 +164,7 @@ width:400px;
 
 .signup 
 {float:right;}
+
+.about { padding: 0px 40px;}
 
 

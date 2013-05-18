@@ -1,3 +1,8 @@
+<div class="content">
+<div class="profile">
+<%= render :partial => 'users/profile' %>
+</div>
+
 <h2><%= t('.title', :forum => forum) %></h2>
 
 <h3><%= t('posts_count', :count => @posts.count, :scope => 'forem.general') %></h3>
@@ -11,3 +16,4 @@
   </div>
   <%= submit_tag "Moderate" %>
 <% end %>
+</div>

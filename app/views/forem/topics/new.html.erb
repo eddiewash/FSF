@@ -1,9 +1,11 @@
-<br>
-<br>
-<br>
-<br>
+<div class="content">
+<div class="profile">
+<%= render :partial => 'users/profile' %>
+</div>
+
 <%= render :partial => 'forem/forums/head', :locals => { :forum => @topic.forum } %>
 
 <h2><%= t("forem.topic.new") %></h2>
 
 <%= render "form" %>
+</div>

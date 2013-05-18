@@ -1,18 +1,19 @@
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="content">
+<div class="profile">
+<%= render :partial => 'users/profile' %>
+</div>
 
 <div id='forums_container'>
   <h3 id='forums_title'><%= t('.title') %></h3>
 
-  <%= render @categories %>
-</div>
+<%= render @categories %>
 
+</div>
+</div>
+</div>
 <br>
 <footer id='admin_link'>
   <% if forem_admin? %>
     <%= link_to t("area", :scope => "forem.admin"), forem.admin_root_path %>
   <% end %>
-</footer>
+
