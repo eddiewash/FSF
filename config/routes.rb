@@ -5,6 +5,7 @@ FSF::Application.routes.draw do
   resources :garments
   devise_for :installs
   devise_for :users
+  put 'garments/:garment_id' => 'garments#update', :as => 'update_attendance'
 
 
 end

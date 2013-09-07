@@ -17,12 +17,13 @@ class GarmentsController < ApplicationController
   end
 
   def edit
-    @garments = Garment.all
+    @garment = Garment.find(params[:id])
   end
 
   def update
-    @garment.update garment_params
-    redirect_to garments_path
+    @garment = Garment.find(params[:id])
+    @garment.update_attributes(params[:garment])
+    redirect_to @garment, notice: 'Garment Updated!'
   end
 
   def show

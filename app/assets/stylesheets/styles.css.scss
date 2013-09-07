@@ -1,8 +1,15 @@
 
+      @media (max-width:480px) {
+
+
+      body {width:360px;}
+
+
+    }
 
 $navbarBackgroundHighlight: white;
 $navbarBackground: white;
-$btnPrimaryBackground: #F08080;
+$btnPrimaryBackground: #E61F50;
 
 @import url('//fonts.googleapis.com/css?family=News+Cycle:400,700');
 
@@ -17,7 +24,7 @@ body{
    -webkit-border-radius: 20px;
    -moz-border-radius: 20px;
    border-radius: 20px;
-   background-color:#F08080;
+   background-color: white;
    opacity:0.8;
 }
 
@@ -29,12 +36,8 @@ body{
     }
 }
 
-body {
-  background: url("fashionstudentforums.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body
+{background-image: url("fashionstudentforums.jpg");
 }
 
 .welcome
@@ -84,21 +87,22 @@ h1, h2, h3, h4, td {
 }
 
 h3, {
-	color:#F08080;
-	font-weight: 500;
+  color:black;
+  font-weight: 500;
 }
 
 thread
 {width:400px}
 h4
 {
-color:#20BBB2;
+font-weight: 500;
+color:black;
 }
 
 h5, h6, p, div {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-color:grey;
+    font-color:black;
 }
 .signuppage
 {margin-top:0px;
@@ -111,10 +115,10 @@ margin:0px auto;
 }
 
 .sharedlinks {
-	float:right;
-	margin:300px, 10px;
-	width:200px;
-	height:200px;
+  float:right;
+  margin:300px, 10px;
+  width:200px;
+  height:200px;
 }
 
 .signuppagecontent
@@ -126,14 +130,14 @@ width:400px;
 }
 
 .form-actions {
-	background-color:white;
+  background-color:white;
 }
 
 .image {
-	width:500px;
-	float:left;
-	margin-top: 100px;
-	border-right:1px solid white;
+  width:500px;
+  float:left;
+  margin-top: 100px;
+  border-right:1px solid white;
 
 
 }
@@ -149,6 +153,22 @@ height:500px;
  width:900px;
  margin: 100px auto;
 
+ }
+
+ li.span3{
+ float:left;
+ width:150px; height:350px;
+ margin:10px;
+ }
+
+ .thumbnail {
+ width:150px;
+ height:150px;
+ }
+
+  .thumbnails {
+ width:100%;
+ float:left;
  }
 
 .logo
