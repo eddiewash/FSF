@@ -53,8 +53,7 @@
           <div class="container nav-collapse">
             <ul class="nav">
               <li><%= link_to "ABOUT", "/about"  %></li>
-              <li><%= link_to "the FORUM", "/forums"  %></li>
-              <li><%= link_to "CONTACT", "/path3"  %></li>
+              <li><%= link_to "ADD GARMENT", new_garment_path  %></li>
             </ul>
     <%= render 'layouts/header' %>
           </div><!--/.nav-collapse -->
@@ -63,18 +62,18 @@
     </div>
 
 
-    <div class="content"> 
+    <div class="content">
       <div class="main">
       <div class="welcome">
       <%= yield %>
     </div>
 
-    
 
-    
+
+
     </div>
 
-    
+
 </div>
 </div>
 
