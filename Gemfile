@@ -9,7 +9,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'unicorn'
+	gem 'pg'
 	gem 'thin'
 end
 
@@ -20,7 +20,6 @@ gem 'simple_form'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'forem', :git => "git://github.com/radar/forem.git"
 gem 'kaminari', '0.13.0'
 
 # Gems used only for assets and not required
